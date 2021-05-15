@@ -116,6 +116,7 @@ function DisplayContent(props) {
         <div className={classes.root}>
             <Typography variant="h6">
                 {pageOptions()}
+                <h6>Tesing github commit</h6>
             </Typography>
             <Dialog className={classes.dialog} open={open} onClose={handleClose} fullWidth maxWidth="xs">
 
