@@ -130,12 +130,7 @@ function App() {
     <div className={classes.root}>
       <NavBar value={getMediaType} showImages={controls.showImages} hideImages={hideImages} controls={controls} />
         <Grid container spacing={4} style={{display: 'flex', justifyContent: 'center'}}>
-          {/* <Grid xs={12} className={classes.resultsTxt}>
-            ({controls.offset} - {controls.offset + 18}) of {controls.total} results for
-                {activeMedia !== '' ?
-              ' ' + activeMedia.mediaType + ' - ' + (activeMedia.name || activeMedia.title)
-              : ' all ' + controls.mediaType}
-          </Grid> */}
+
           {activeMedia && <Grid item style={{ color: 'white' }} lg={3} md={4} sm={10} xs={12}>
             <ActiveMedia media={activeMedia} type={controls.mediaType} changeContent={changeContent} loading={loading} />
           </Grid>}
